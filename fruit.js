@@ -2,7 +2,6 @@ class Fruit{
 	constructor(sprite){
 		this.sprite = sprite;
 		this.position = this.findPosition();
-		//console.log("fruit pos = ", this.position);
 	}
 
 	findPosition(){
@@ -28,8 +27,6 @@ class Fruit{
     }
 
 	render(){
-		//fill("#ccff00");
-		//rect(this.position.x * TILE_SIZE + 1, this.position.y * TILE_SIZE + 1, TILE_SIZE - 1, TILE_SIZE - 1);
 		image(this.sprite, this.position.x * TILE_SIZE, this.position.y * TILE_SIZE,
 			TILE_SIZE, TILE_SIZE, 2 * TILE_SIZE, 0, TILE_SIZE, TILE_SIZE);
 	}

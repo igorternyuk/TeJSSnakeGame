@@ -106,11 +106,8 @@ class Snake {
 		fill(0,180,0);
 		image(this.sprite, this.body[0].x * TILE_SIZE, this.body[0].y * TILE_SIZE,
 			TILE_SIZE, TILE_SIZE, TILE_SIZE, 0, TILE_SIZE, TILE_SIZE);
-		//rect(this.body[0].x * TILE_SIZE + 1, this.body[0].y * TILE_SIZE + 1, TILE_SIZE - 1, TILE_SIZE - 1);
-		//console.log("" + this.body[0].x + ", " + this.body[0].y);
 		for(let i = 1; i < this.body.length; ++i){
 			fill(0,0,255);
-			//console.log("" + this.body[i].x + ", " + this.body[i].y);
 			image(this.sprite, this.body[i].x * TILE_SIZE, this.body[i].y * TILE_SIZE,
 			TILE_SIZE, TILE_SIZE, 0, 0, TILE_SIZE, TILE_SIZE);
 		}

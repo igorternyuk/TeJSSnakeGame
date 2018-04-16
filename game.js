@@ -28,10 +28,6 @@ function setup() {
 	poison = new Poison(sprite);
 	fruit = new Fruit(sprite);
 	poison.setFruit(fruit);
-	let v1 = createVector(1,1);
-	let v2 = createVector(1,1);
-	let v12 = (v1 === v2);
-	console.log("v1 === v2 ? => ", v12);
 }
 
 function draw() {
@@ -81,7 +77,6 @@ function mouseClicked(){
 }
 
 function keyPressed(){
-	//console.log('code = ', keyCode);
 	switch(keyCode){
 		case LEFT_ARROW:
 			snake.turn(dirLeft);

@@ -56,8 +56,6 @@ class Poison{
 	}
 
 	render(){
-		//fill("#ccff00");
-		//rect(this.position.x * TILE_SIZE + 1, this.position.y * TILE_SIZE + 1, TILE_SIZE - 1, TILE_SIZE - 1);
 		for(let i = 0; i < this.apples.length; ++i){
 			image(this.sprite, this.apples[i].x * TILE_SIZE, this.apples[i].y * TILE_SIZE,
 			TILE_SIZE, TILE_SIZE, 3 * TILE_SIZE, 0, TILE_SIZE, TILE_SIZE);
